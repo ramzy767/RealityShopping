@@ -28,7 +28,7 @@ const Shipping = ({ history }) => {
   const shippingSubmit = (e) => {
     e.preventDefault();
 
-    if (phoneNo.length < 10 || phoneNo.length > 10) {
+    if (phoneNo.length < 11 || phoneNo.length > 11) {
       alert.error("Phone Number should be 10 digits Long");
       return;
     }
@@ -90,11 +90,11 @@ const Shipping = ({ history }) => {
               <PhoneIcon />
               <input
                 type="number"
-                placeholder="Phone Number"
+                placeholder="Phone Number 03XXXXXXXXX"
                 required
                 value={phoneNo}
                 onChange={(e) => setPhoneNo(e.target.value)}
-                size="10"
+                size="11"
               />
             </div>
 
