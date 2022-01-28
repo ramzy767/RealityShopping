@@ -8,6 +8,9 @@
 
 **For Frontend** - `cd frontend` ` npm i`
 
+# Change frontend ip Address Proxy
+**Goto** - `frontend/package.json : In end there a 'proxy' change it with your IPv4 address but the port remains the same 
+
 ## Env Variables
 
 Make Sure to Create a config.env file in backend/config directory and add appropriate variables in order to use the app.
